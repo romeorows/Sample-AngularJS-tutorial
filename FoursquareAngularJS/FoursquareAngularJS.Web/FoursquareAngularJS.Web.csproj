@@ -82,6 +82,9 @@
     <Content Include="content\css\united-bootstrap-theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="scripts\angular-animate.min.js" />
+    <Content Include="scripts\angular-resource.min.js" />
+    <Content Include="scripts\angular-route.min.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\loading-bar.min.js" />
     <Content Include="scripts\toaster.js" />

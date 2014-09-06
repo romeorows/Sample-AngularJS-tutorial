@@ -1,0 +1,17 @@
+﻿<div>
+    <div>
+        <!--"ng-model" is responsible for the two way data binding.-->
+        <!--we have binded the text input to exploreNearby
+            so if the value of the text input has changed then the
+            value of the model will be changed and vise versa-->
+
+        <input type="text" data-ng-model="exploreNearby" />
+    </div>
+    <div>
+        <!-- we do not use $scope to reference the model in html,
+            we use double curly brackets {{}} instead -->
+        <h5>Places found Near by ({{exploreNearby}})</h5>
+
+    </div>
+
+</div>
