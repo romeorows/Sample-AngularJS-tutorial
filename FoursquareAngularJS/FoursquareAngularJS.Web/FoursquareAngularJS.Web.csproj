@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F6D28263-DC73-43B4-A7DF-83BA78180749}</ProjectGuid>
+    <ProjectGuid>{A08A8AC8-C50F-4E13-A9E3-9300FB99B210}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -72,16 +72,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\views\Index.html" />
-    <Content Include="Content\css\bootstrap.min.css" />
-    <Content Include="Content\css\loading-bar.min.css" />
-    <Content Include="Content\css\site.css" />
-    <Content Include="Content\css\toaster.css" />
+    <Content Include="app\app.js" />
+    <Content Include="app\controllers\placesExplorerController.js" />
+    <Content Include="content\css\bootstrap.min.css" />
+    <Content Include="content\css\loading-bar.min.css" />
+    <Content Include="content\css\site.css" />
+    <Content Include="content\css\toaster.css" />
+    <Content Include="content\css\united-bootstrap-theme.min.css" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\loading-bar.min.js" />
-    <Content Include="Scripts\toaster.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-0.11.0.min.js" />
+    <Content Include="index.html" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\loading-bar.min.js" />
+    <Content Include="scripts\toaster.js" />
+    <Content Include="scripts\ui-bootstrap-0.11.0.min.js" />
+    <Content Include="scripts\ui-bootstrap-tpls-0.11.0.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,10 +105,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\controllers\" />
     <Folder Include="app\directives\" />
     <Folder Include="app\filters\" />
     <Folder Include="app\services\" />
+    <Folder Include="app\views\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
@@ -122,7 +126,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>7706</DevelopmentServerPort>
+          <DevelopmentServerPort>2411</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:7706/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

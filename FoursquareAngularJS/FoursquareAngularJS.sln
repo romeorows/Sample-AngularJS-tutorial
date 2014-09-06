@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoursquareAngularJS.Web", "FoursquareAngularJS.Web\FoursquareAngularJS.Web.csproj", "{F6D28263-DC73-43B4-A7DF-83BA78180749}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoursquareAngularJS.Web", "FoursquareAngularJS.Web\FoursquareAngularJS.Web.csproj", "{A08A8AC8-C50F-4E13-A9E3-9300FB99B210}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F6D28263-DC73-43B4-A7DF-83BA78180749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6D28263-DC73-43B4-A7DF-83BA78180749}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6D28263-DC73-43B4-A7DF-83BA78180749}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6D28263-DC73-43B4-A7DF-83BA78180749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08A8AC8-C50F-4E13-A9E3-9300FB99B210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08A8AC8-C50F-4E13-A9E3-9300FB99B210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08A8AC8-C50F-4E13-A9E3-9300FB99B210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08A8AC8-C50F-4E13-A9E3-9300FB99B210}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
