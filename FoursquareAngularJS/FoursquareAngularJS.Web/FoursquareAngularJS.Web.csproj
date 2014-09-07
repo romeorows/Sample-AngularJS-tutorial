@@ -74,6 +74,7 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\controllers\placesExplorerController.js" />
+    <Content Include="app\filters\placeNameCategoryFilter.js" />
     <Content Include="app\services\placesExplorerService.js" />
     <Content Include="app\views\placesresults.html" />
     <Content Include="content\css\bootstrap.min.css" />
@@ -111,7 +112,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\directives\" />
-    <Folder Include="app\filters\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
