@@ -1,17 +1,83 @@
 ﻿<div>
-    <div>
-        <!--"ng-model" is responsible for the two way data binding.-->
-        <!--we have binded the text input to exploreNearby
-            so if the value of the text input has changed then the
-            value of the model will be changed and vise versa-->
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div>
+                <!--"ng-model" is responsible for the two way data binding.-->
+                <!--we have binded the text input to exploreNearby
+                    so if the value of the text input has changed then the
+                    value of the model will be changed and vise versa-->
+                <input type="text" data-ng-model="exploreNearby" class="form-control" placeholder="Explore Places In. e.g. New York"/>
+            </div>
+            <div>
+                <input type="text" data-ng-model="exploreQuery" class="form-control" placeholder="Specify Category. e.g. Burger"/>
+            </div>
+            <div>
+                <button class="btn btn-primary pull-right" data-ng-click="doSearch()"><span class="glyphicon glyphicon-search"></span>Explore</button>
+            </div>
+        </div>
 
-        <input type="text" data-ng-model="exploreNearby" />
-    </div>
-    <div>
-        <!-- we do not use $scope to reference the model in html,
+        <div class="well well-sm" data-ng-show="totalRecordsCount == 0">
+            <!-- we do not use $scope to reference the model in html,
             we use double curly brackets {{}} instead -->
-        <h5>Places found Near by ({{exploreNearby}})</h5>
+            <h5>Places found Near by ({{exploreNearby}})</h5>
 
-    </div>
+        </div>
+
+        <div data-ng-show="totalRecordsCount > 0">
+            <div>
+                <div>
+                    <input type="text" data-ng-model="filterValue" class="form-control" placeholder="Filter Places by (Place Name) or (Category)" />s
+                </div>
+            </div>
+            <ul class="list-group" data-ng-repeat="item in filteredPlaces">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div>
+                            <img data-ng-src="{{buildCategoryIcon(item.venue.categories[0].icon)}}"
+                                 title="{{item.venue.categories[0].shortName}}" class="venueIcon" />
+                        </div>
+                        <div>
+                            <a href="" data-ng-click="showVenuePhotos(item.venue.id,item.venue.name)">
+                                <h2 class="venueName">{{item.venue.name}}</h2>
+                            </a>
+                        </div>
+                        <div>
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <span class="badge">{{item.venue.rating | number:1}}</span>
+                        </div>
+                        <div>
+                            <p class="text-warning"><small>{{(item.venue.location.address != null) && item.venue.location.address}} - {{item.venue.categories[0].shortName}}</small></p>
+                            <p>{{}item.tips[0].text}</p>
+                            <hr class="seperator" />
+                            <a href="" data-ng-click="bookmarkPlace(item.venue)"><span class="glyphicon glyphicon-bookmark"></span>Bookmark</a>
+                        </div>
+                        <div>
+                            <a href="" data-ng-click="showVenuePhotos(item.venue.id,item.venue.name)">
+                                <img data-ng-src="{{buildVenueThumbnail(item.venue.photos.groups[0])}}" class="img-thumbnail" />
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="ext-center">
+                <div data-ng-show="totalRecordsCount > 0">
+                    <div>
+                        <div data-pagination="" data-previous-text="<" data-next-text=">" data-first-text="<<" data-last-text=">>"
+                             data-on-select-page="pageChanged(page)" data-total-items="totalRecordsCount" data-page="currentPage"
+                             data-boundary-links="true" class="pagination pagination-sm" data-max-size="5" data-rotate="false" data-items-per-page="10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
 </div>
