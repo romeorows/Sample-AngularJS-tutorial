@@ -1,4 +1,6 @@
-﻿app.filter("placeNameCategoryFilter", function () {
+﻿
+//to use this in the placesexplorerController we just need to call the function in this way $filter("placeNameCategoryFilter")($scope.places, filterInput);
+app.filter("placeNameCategoryFilter", function () {
     return function (places,filterValue) {
         if (!filterValue) return places;
 
