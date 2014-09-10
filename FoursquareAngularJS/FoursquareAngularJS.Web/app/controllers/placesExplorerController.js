@@ -43,6 +43,11 @@ app.controller('placesExplorerController', function ($scope,placesExplorerServic
         });
     };
 
+    function filterPlaces(filterInput) {
+        $scope.filteredPlaces = $filter("placeNameCategoryFilter")($scope.places, filterInput);
+        $scope.filteredPlacesCount = $scope.filteredPlaces.length;
+    }
+
     function createWatche() {
         //added listener for the filterValue attribute
         //this listener gets fired when the filterValue has changed.

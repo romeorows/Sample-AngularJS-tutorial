@@ -16,7 +16,7 @@ ref:http://stackoverflow.com/questions/15666048/service-vs-provider-vs-factory?l
 HTTP request to Foursquare explore places API*/
 
 /*For more info about Foursquare API and how to get a client ID and secret visit
-https://developer.foursquare.com/docs/venues/explore*/
+https://developer.foursquare.com/docs/venues/explore */
 
 var requestParms = {
     clientId: "DO5JJHGXBODWHZUZ2W45T0S35PKJH3MCLC1SKF5U4X3VF4YA",

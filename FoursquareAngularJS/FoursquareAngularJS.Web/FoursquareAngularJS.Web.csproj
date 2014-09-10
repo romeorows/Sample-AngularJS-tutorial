@@ -85,11 +85,13 @@
     <Content Include="content\css\site.css" />
     <Content Include="content\css\toaster.css" />
     <Content Include="content\css\united-bootstrap-theme.min.css" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\angular-resource.min.js" />
     <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\loading-bar.min.js" />
     <Content Include="scripts\toaster.js" />
@@ -106,6 +108,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="scripts\angular-animate.min.js.map" />
+    <Content Include="scripts\angular-resource.min.js.map" />
+    <Content Include="scripts\angular-route.min.js.map" />
+    <Content Include="scripts\angular.min.js.map" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
