@@ -1,7 +1,7 @@
 ﻿//$scope is the glue between the controller and the view
 //we can think of it as the container holding the data that we want 
 //to project on the view
-app.controller('placesExplorerController', function ($scope,placesExplorerService,$filter) {
+app.controller('placesExplorerController', function ($scope, placesExplorerService, placesPhotosService, $filter, $model) {
     //in this line we added a new model "exploreNearby" in the $scope object
     $scope.exploreNearby = "New York";
     $scope.exploreQuery = "";
@@ -75,5 +75,29 @@ app.controller('placesExplorerController', function ($scope,placesExplorerServic
         return photo.items[0].prefix + '128x128' + photo.items[0].suffix;
     };
 
+    $scope.showVenuePhotos = function (venueId, venueName) {
 
+        placesPhotosService.get({ venueId: venueId }, function (photosResult) {
+
+            var modalInstance = $modal.open({
+                templateUrl: 'app/views/placesphotos.html',
+                controller: 'placesPhotosController',
+                resolve: {
+                    venueName: function () {
+                        return venueName;
+                    },
+                    venuePhotos: function () {
+                        return photosResult.response.photos.items;
+                    }
+                }
+            });
+
+            modalInstance.result.then(function () {
+                //$scope.selected = selectedItem;
+            }, function () {
+                //alert('Modal dismissed at: ' + new Date());
+            });
+
+        });
+    };
 });
