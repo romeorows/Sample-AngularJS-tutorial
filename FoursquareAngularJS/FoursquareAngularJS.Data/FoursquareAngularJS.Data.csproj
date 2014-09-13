@@ -49,6 +49,7 @@
     <Compile Include="Entities\BookmarkedPlace.cs" />
     <Compile Include="FourSquareContext.cs" />
     <Compile Include="FourSquareContextMigrationConfiguration.cs" />
+    <Compile Include="FourSquareRepository.cs" />
     <Compile Include="Mappers\BookmarkedPlaceMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
