@@ -76,6 +76,7 @@
     <Content Include="app\controllers\placesExplorerController.js" />
     <Content Include="app\controllers\placesPhotosController.js" />
     <Content Include="app\filters\placeNameCategoryFilter.js" />
+    <Content Include="app\services\PlacesDataService.js" />
     <Content Include="app\services\placesPhotoService.js" />
     <Content Include="app\services\placesExplorerService.js" />
     <Content Include="app\views\placesphotos.html" />
