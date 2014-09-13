@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace FoursquareAngularJS.Data.Mappers
 {
+    /// <summary>
+    /// "Convention over Configuration" Approach - mapping your POCO classes to database objects(Table,Table fields data types and FK Relations).
+    /// In here we will be configuring the POCO class propeties.(Data Type, Null-Ability, PK, identity columns and FK relations)
+    /// </summary>
     class BookmarkedPlaceMapper : EntityTypeConfiguration<BookmarkedPlace>
     {
         public BookmarkedPlaceMapper()
