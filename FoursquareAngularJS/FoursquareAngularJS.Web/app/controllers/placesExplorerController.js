@@ -1,7 +1,7 @@
 ﻿//$scope is the glue between the controller and the view
 //we can think of it as the container holding the data that we want 
 //to project on the view
-app.controller('placesExplorerController', function ($scope, placesExplorerService, placesPhotosService, $filter, $modal) {
+app.controller('placesExplorerController', function ($scope, placesExplorerService, placesPhotosService,placesDataService, $filter, $modal) {
     //in this line we added a new model "exploreNearby" in the $scope object
     $scope.exploreNearby = "New York";
     $scope.exploreQuery = "";
@@ -99,5 +99,28 @@ app.controller('placesExplorerController', function ($scope, placesExplorerServi
             });
 
         });
+    };
+
+    $scope.bookmarkPlace = function (venue) {
+        if (!placesDataService.getUserInContext()) {
+            var modalInstance = $modal.open({
+                templateUrl: 'app/views/userprofile.html',
+                controller: 'userContextController',
+                resolve: {
+                    venue: function () {
+                        return venue;
+                    }
+                }
+            });
+        }
+        else {
+            placesDataService.savePlace(venue).then(
+                function (results) {
+                    // Do nothing as toaster showing from service
+                },
+                function (results) {
+                    // Do nothing as toaster showing from service
+                });
+        }
     };
 });
