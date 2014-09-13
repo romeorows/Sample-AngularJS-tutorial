@@ -57,7 +57,7 @@ app.factory('placesDataService', function ($http, toaster) {
     };
 
     placesDataFactory.getUserInContext = _getUserInCtx;
-    placesDataFactory.getUserInContext = _setUserInCtx;
+    placesDataFactory.setUserInContext = _setUserInCtx;
     placesDataFactory.getUserPlaces = _getUserPlaces;
     placesDataFactory.userExists = _userExists;
     placesDataFactory.savePlace = _savePlace;

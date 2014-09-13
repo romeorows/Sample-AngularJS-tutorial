@@ -1,6 +1,6 @@
 ﻿
 //ngRoute used for mapping view template to a controller
-var app = angular.module('FoursquareApp', ['ngRoute', 'ngResource', 'ui.bootstrap']);
+var app = angular.module('FoursquareApp', ['ngRoute', 'ngResource', 'ui.bootstrap','toaster']);
 
 //$routeProvider responsible for wiring the controller, view and the url location in the browser
 app.config(function ($routeProvider) {

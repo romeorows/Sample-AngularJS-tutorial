@@ -38,6 +38,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
@@ -75,12 +82,14 @@
     <Content Include="app\app.js" />
     <Content Include="app\controllers\placesExplorerController.js" />
     <Content Include="app\controllers\placesPhotosController.js" />
+    <Content Include="app\controllers\userContextController.js" />
     <Content Include="app\filters\placeNameCategoryFilter.js" />
-    <Content Include="app\services\PlacesDataService.js" />
+    <Content Include="app\services\placesDataService.js" />
     <Content Include="app\services\placesPhotoService.js" />
     <Content Include="app\services\placesExplorerService.js" />
     <Content Include="app\views\placesphotos.html" />
     <Content Include="app\views\placesresults.html" />
+    <Content Include="app\views\userprofile.html" />
     <Content Include="content\css\bootstrap.min.css" />
     <Content Include="content\css\loading-bar.min.css" />
     <Content Include="content\css\site.css" />

@@ -20,7 +20,7 @@ namespace FoursquareAngularJS.Web
 
             config.Routes.MapHttpRoute(
                 name:"UsersRoute",
-                routeTemplate: "/api/users/{userName}",
+                routeTemplate: "api/users/{userName}",
                 defaults: new {controller="users"}
                 );
 
