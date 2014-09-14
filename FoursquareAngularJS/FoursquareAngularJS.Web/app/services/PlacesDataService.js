@@ -47,6 +47,7 @@ app.factory('placesDataService', function ($http, toaster) {
 
     var _getUserPlaces = function (userName, pageIndex, pageSize) {
         return $http.get(serviceBase + userName, { params: { page: pageIndex, pageSize: pageSize } }).then(function (results) {
+            return results;
         });
     };
 

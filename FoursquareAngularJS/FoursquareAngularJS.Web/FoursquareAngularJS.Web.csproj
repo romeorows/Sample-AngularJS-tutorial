@@ -88,6 +88,7 @@
     <Content Include="app\services\placesDataService.js" />
     <Content Include="app\services\placesPhotoService.js" />
     <Content Include="app\services\placesExplorerService.js" />
+    <Content Include="app\views\myplaces.html" />
     <Content Include="app\views\placesphotos.html" />
     <Content Include="app\views\placesresults.html" />
     <Content Include="app\views\userprofile.html" />

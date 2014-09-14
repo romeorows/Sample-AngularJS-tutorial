@@ -13,6 +13,10 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/views/placesresults.html"
     });
 
+    $routeProvider.when("/places", {
+        controller: "myPlacesController",
+        templateUrl: "/app/views/myplaces.html"
+    });
     //return URL "/explore" when ever it did not find any matching url
     $routeProvider.otherwise({redirectTo:"/explore"});
 });
