@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\controllers\myPlacesController.js" />
     <Content Include="app\controllers\placesExplorerController.js" />
     <Content Include="app\controllers\placesPhotosController.js" />
     <Content Include="app\controllers\userContextController.js" />
